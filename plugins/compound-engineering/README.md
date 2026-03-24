@@ -6,7 +6,7 @@ AI-powered development tools that get smarter with every use. Make each unit of 
 
 | Component | Count |
 |-----------|-------|
-| Agents | 25+ |
+| Agents | 35+ |
 | Skills | 40+ |
 | MCP Servers | 1 |
 
@@ -41,6 +41,17 @@ Agents are organized into categories for easier discovery.
 | `security-reviewer` | Exploitable vulnerabilities with confidence calibration (ce:review-beta persona) |
 | `security-sentinel` | Security audits and vulnerability assessments |
 | `testing-reviewer` | Test coverage gaps, weak assertions (ce:review-beta persona) |
+
+### Document Review
+
+| Agent | Description |
+|-------|-------------|
+| `coherence-reviewer` | Review documents for internal consistency, contradictions, and terminology drift |
+| `design-lens-reviewer` | Review plans for missing design decisions, interaction states, and AI slop risk |
+| `feasibility-reviewer` | Evaluate whether proposed technical approaches will survive contact with reality |
+| `product-lens-reviewer` | Challenge problem framing, evaluate scope decisions, surface goal misalignment |
+| `scope-guardian-reviewer` | Challenge unjustified complexity, scope creep, and premature abstractions |
+| `security-lens-reviewer` | Evaluate plans for security gaps at the plan level (auth, data, APIs) |
 
 ### Research
 
@@ -134,7 +145,7 @@ Core workflow commands use `ce:` prefix to unambiguously identify them as compou
 
 | Skill | Description |
 |-------|-------------|
-| `document-review` | Improve documents through structured self-review |
+| `document-review` | Review documents using parallel persona agents for role-specific feedback |
 | `every-style-editor` | Review copy for Every's style guide compliance |
 | `file-todos` | File-based todo tracking system |
 | `git-worktree` | Manage Git worktrees for parallel development |
